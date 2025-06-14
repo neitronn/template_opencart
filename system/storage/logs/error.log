@@ -1,0 +1,1 @@
+2025-06-14 14:33:24 - PHP Warning:  mysqli::query(): (42000/1049): Unknown database 'site' in E:\OSPanel\domains\site\system\library\db\mysqli.php on line 25

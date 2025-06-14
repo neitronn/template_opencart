@@ -1,0 +1,53 @@
+# Ignoring common files and directories for OpenCart
+
+# Logs
+system/logs/*.log
+
+# Cache
+system/storage/cache/*
+!system/storage/cache/index.html
+
+# Modifications cache
+system/storage/modification/*
+!system/storage/modification/index.html
+
+# Session files
+system/storage/session/*
+!system/storage/session/index.html
+
+# Uploads directory (user generated content, can be large)
+system/storage/upload/*
+!system/storage/upload/index.html
+
+# Download files
+system/storage/download/*
+!system/storage/download/index.html
+
+# Vendor folder
+vendor/
+
+# Composer files
+composer.lock
+composer.phar
+
+# Configuration files that are often modified locally
+config.php
+admin/config.php
+
+# Image cache and resized images
+image/cache/*
+!image/cache/index.html
+image/catalog/*/*-*.jpg
+image/catalog/*/*-*.png
+image/catalog/*/*-*.gif
+
+# Any other files that might be generated locally
+*.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+nbproject/
+*.sql
+*.zip
+*.rar
+*.tar.gz 
