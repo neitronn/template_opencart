@@ -27,6 +27,9 @@ $_['entry_image_cart']                 = 'Cart Image Size (W x H)';
 $_['entry_image_location']             = 'Store Image Size (W x H)';
 $_['entry_width']                      = 'Width';
 $_['entry_height']                     = 'Height';
+$_['entry_primary_color']              = 'Primary Color';
+$_['entry_secondary_color']            = 'Secondary Color';
+$_['entry_text_color']                 = 'Text Color';
 
 // Help
 $_['help_directory']                   = 'This field is only to enable older themes to be compatible with the new theme system. You can set the theme directory to use on the image size settings defined here.';

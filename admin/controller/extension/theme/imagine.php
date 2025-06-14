@@ -320,6 +320,30 @@ class ControllerExtensionThemeImagine extends Controller {
 			$data['theme_imagine_image_location_height'] = 50;
 		}
 		
+		if (isset($this->request->post['theme_imagine_primary_color'])) {
+			$data['theme_imagine_primary_color'] = $this->request->post['theme_imagine_primary_color'];
+		} elseif (isset($setting_info['theme_imagine_primary_color'])) {
+			$data['theme_imagine_primary_color'] = $setting_info['theme_imagine_primary_color'];
+		} else {
+			$data['theme_imagine_primary_color'] = '';
+		}
+		
+		if (isset($this->request->post['theme_imagine_secondary_color'])) {
+			$data['theme_imagine_secondary_color'] = $this->request->post['theme_imagine_secondary_color'];
+		} elseif (isset($setting_info['theme_imagine_secondary_color'])) {
+			$data['theme_imagine_secondary_color'] = $setting_info['theme_imagine_secondary_color'];
+		} else {
+			$data['theme_imagine_secondary_color'] = '';
+		}
+		
+		if (isset($this->request->post['theme_imagine_text_color'])) {
+			$data['theme_imagine_text_color'] = $this->request->post['theme_imagine_text_color'];
+		} elseif (isset($setting_info['theme_imagine_text_color'])) {
+			$data['theme_imagine_text_color'] = $setting_info['theme_imagine_text_color'];
+		} else {
+			$data['theme_imagine_text_color'] = '';
+		}
+		
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
